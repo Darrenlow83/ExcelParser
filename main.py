@@ -27,7 +27,7 @@ def getInvoiceDetails(df, keyword):
 
 def getFeesBreakdown(df):
     """ To get ifees breakdown"""
-    # Use 'Fees' to identify to start row
+    # Use 'Fees' to identify the start row
     for row in range(df.shape[0]): 
         for col in range(df.shape[1]):
             if df.iat[row,col] == 'Fees':
